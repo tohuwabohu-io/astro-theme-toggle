@@ -1,0 +1,94 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+:root[data-theme="light"] {
+	--background-color: #fff;
+	--color: #444;
+	--heading-color: #222;
+	--link-color: #3273dc;
+	--link-visited-color: #193c75;
+	--code-background-color: #c7c7c7;
+	--theme-slider-initial-transform: 0px;
+	--light-theme-indicator-color: #ffcf00;
+	--dark-theme-indicator-color: var(--color);
+}
+
+:root[data-theme="dark"] {
+	--background-color: #444;
+	--color: #fff;
+	--heading-color: #f1f1f1;
+	--link-color: #de9906;
+	--link-visited-color: #966807;
+	--code-background-color: #252525;
+	--theme-slider-initial-transform: translateX(24px);
+	--light-theme-indicator-color: var(--color);
+	--dark-theme-indicator-color: #ffcf00;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+	margin: auto;
+	padding: 20px;
+	max-width: 65ch;
+	text-align: left;
+	background-color: var(--background-color);
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	color: var(--color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+	color: var(--heading-color);
+}
+a {
+	color: var(--link-color);
+}
+a:visited {
+	color: var(--link-visited-color);
+}
+nav a {
+	margin-right: 10px;
+}
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+input {
+	font-size: 16px;
+}
+content {
+	line-height: 1.6;
+}
+table {
+	width: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+code {
+	padding: 2px 5px;
+	background-color: var(--code-background-color);
+}
+pre {
+	padding: 1rem;
+}
+pre > code {
+	all: unset;
+}
+blockquote {
+	border: 1px solid var(--code-background-color);
+	color: var(--heading-color);
+	padding: 2px 0px 2px 20px;
+	margin: 0px;
+	font-style: italic;
+}
